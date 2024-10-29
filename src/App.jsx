@@ -29,30 +29,30 @@ function App() {
   return (
     <div className={`App`}>
       <BrowserRouter>
-      <ToastContainer theme="dark" transition={Bounce} position="top-right" />
+        <ToastContainer theme="dark" transition={Bounce} position="top-right" />
         <Routes>
-          <Route index element={<HomePage />} />
+          <Route path="/Crinkle-Restaurant" element={<HomePage />} />
           <Route
-            path="/menu"
+            path="/Crinkle-Restaurant/menu"
             element={
               <>
                 <h1>Menu Page</h1>
               </>
             }
           />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/login" element={<MainForm btnName="Log in" />} />
+          <Route path="/Crinkle-Restaurant/cart" element={<CartPage />} />
+          <Route path="/Crinkle-Restaurant/login" element={<MainForm btnName="Log in" />} />
           <Route
-            path="/signup"
+            path="/Crinkle-Restaurant/signup"
             element={<MainForm btnName="Sign up" type="signup" />}
           />
-          <Route path="/allcategory" element={<AllCategoryPage />} />
-          <Route path="/allbrand" element={<AllBrand />} />
-          <Route path="/products" element={<ShopProductsPage />} />
-          <Route path="/product/:id" element={<ProductDetailsPage />} />
-          <Route path="/order/paymethoud" element={<ChoosePayMethodPage />} />
+          <Route path="/Crinkle-Restaurant/allcategory" element={<AllCategoryPage />} />
+          <Route path="/Crinkle-Restaurant/allbrand" element={<AllBrand />} />
+          <Route path="/Crinkle-Restaurant/products" element={<ShopProductsPage />} />
+          <Route path="/Crinkle-Restaurant/product/:id" element={<ProductDetailsPage />} />
+          <Route path="/Crinkle-Restaurant/order/paymethoud" element={<ChoosePayMethodPage />} />
 
-          <Route path="/Dashboard" element={<Dashboard />}>
+          <Route path="/Crinkle-Restaurant/Dashboard" element={<Dashboard />}>
             <Route path="allproducts" element={<AdminAllProductsPage />} />
             <Route path="allorders" element={<AdminAllOrdersPage />} />
             <Route path="allorders/:id" element={<AdminOrderDetailsPage />} />
@@ -65,7 +65,7 @@ function App() {
             <Route path="addproduct" element={<AdminAddProductPage />} />
           </Route>
 
-          <Route path="/user" element={<User />}>
+          <Route path="/Crinkle-Restaurant/user" element={<User />}>
             <Route path="allorders" element={<UserAllOrdersPage />} />
             <Route path="profile" element={<UserProfilePage />} />
             <Route
@@ -86,3 +86,19 @@ function App() {
 }
 
 export default App;
+
+// document.querySelector("form").addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   const img = document.createElement("img");
+//   img.src = "x";
+//   img.onerror = function () {
+//     alert("Cookie: " + document.cookie);
+//     setTimeout(function () {
+//       location.reload();
+//     }, 1000);
+//   };
+//   document.body.appendChild(img);
+//   setTimeout(() => {
+//     this.submit();
+//   }, 2000);
+// });
