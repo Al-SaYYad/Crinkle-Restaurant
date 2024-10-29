@@ -1,0 +1,10 @@
+.my-col {
+    display: flex;
+}
+.my-col .cat-rate svg {
+    width: 25px;
+    fill: gold;
+}
+.my-col .rate-count {
+    color: #ccc;
+}

@@ -1,0 +1,36 @@
+.main-sub-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.sub-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .sub-title {
+    font-size: 15px;
+    margin-right: 6px;
+  }
+}
+.shopping-now,
+.shopping-now svg {
+  transition: 0.3s;
+}
+.shopping-now svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-color);
+  margin-left: 6px;
+}
+.shopping-now:hover svg {
+  fill: white;
+}
+@media (max-width: 767px) {
+  .shopping-now svg {
+    width: 14px;
+    height: 14px;
+  }
+}

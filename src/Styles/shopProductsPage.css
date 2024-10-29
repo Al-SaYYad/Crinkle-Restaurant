@@ -1,0 +1,7 @@
+.contain-products {
+    display: flex;
+    flex-direction: row;
+}
+.my-col {
+    display: flex;
+}

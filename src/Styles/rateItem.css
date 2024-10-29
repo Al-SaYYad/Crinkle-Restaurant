@@ -1,0 +1,14 @@
+.my-col {
+  display: flex;
+}
+.my-col .rate-name {
+  font-weight: bold;
+  margin: 0;
+}
+.my-col .rate-description {
+  display: inline;
+  margin: 6px 0 15px 10px;
+  color: #6e6e6e;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}

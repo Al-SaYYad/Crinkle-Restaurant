@@ -1,0 +1,18 @@
+.App {
+  transition: 0.5s;
+}
+.App.dark {
+  background-color: #2f2e2e;
+}
+.App.light {
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .App .Toastify .Toastify__toast {
+    top: 20px;
+    right: -10px;
+    width: 70%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+}

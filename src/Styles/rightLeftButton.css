@@ -1,0 +1,15 @@
+.main-button svg {
+  width: 35px;
+  cursor: pointer;
+  margin-top: 40%;
+  transition: .3s;
+}
+.main-button svg:hover {
+  fill: #f12136;
+}
+.main-button .right-icon {
+  float: right;
+}
+.main-button .left-icon {
+  float: left;
+}

@@ -1,0 +1,44 @@
+.main-search-count {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.main-search-count .search-count-text {
+  user-select: none;
+}
+.main-search-count .sort-by {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 6px;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+.main-search-count .sort-by:hover {
+  background-color: #f12136;
+  color: #fff;
+  fill: #fff;
+}
+.main-search-count .sort-by svg {
+  width: 40px;
+}
+.main-search-count .sort-by p {
+  font-size: 20px;
+}
+.main-search-count .card-filter {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+  z-index: 10000;
+}
+.main-search-count .card-filter div {
+  transition: 0.3s;
+  border-radius: 6px;
+  padding: 6px 10px;
+  border-bottom: 1px solid #ddd;
+}
+.main-search-count .card-filter div:hover {
+  background-color: #f12136;
+  color: white;
+}

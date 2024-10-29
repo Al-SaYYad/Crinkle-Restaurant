@@ -1,0 +1,118 @@
+.main-login {
+  margin: 100px 0;
+}
+.main-login .contain {
+  display: flex;
+  justify-content: center;
+}
+.background {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #eee;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+.social-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+.social-login .social-button {
+  border: 1px solid black;
+  padding: 15px 100px;
+  border-radius: 6px;
+}
+.social-login .social-button svg {
+  width: 50px;
+  height: 50px;
+}
+.separator {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.main-login Form {
+  width: 600px;
+}
+.main-login .input-group {
+  position: relative;
+}
+.main-login .input {
+  box-shadow: none;
+  padding: 20px 0 20px 50px;
+}
+.main-login .input-group svg {
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  z-index: 100000;
+}
+.main-login .input:focus {
+  border: 1px solid black;
+}
+.main-login .eye-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  cursor: pointer;
+  z-index: 10000;
+}
+.main-login .forget {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.btn-sub {
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+  border: 1px solid var(--main-color);
+  width: 100%;
+  margin: 20px 0;
+}
+.btn-sub:hover {
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.main-login .signup {
+  font-size: 20px;
+  font-weight: bold;
+}
+.main-login .signup a {
+  /* text-decoration: none; */
+  margin-left: 10px;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.main-login .signup a:hover {
+  color: red;
+}
+@media (max-width: 767px) {
+  .background {
+    padding: 10px 20px;
+  }
+  .main-login Form {
+    width: fit-content;
+  }
+  .social-login .social-button {
+    padding: 10px 30px;
+  }
+  .main-login .input {
+    padding: 20px 0 20px 35px;
+  }
+  .main-login .input-group svg {
+    width: 20px;
+  }
+}

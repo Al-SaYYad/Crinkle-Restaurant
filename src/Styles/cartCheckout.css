@@ -1,0 +1,70 @@
+.cart-checkout {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.first-col {
+  display: flex;
+  flex-direction: column;
+  width: auto !important;
+}
+.main-copon {
+  display: flex;
+}
+.copon-input,
+.copon-btn {
+  padding: 10px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+.copon-input {
+  display: inline;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-right: transparent;
+  max-width: 70%;
+}
+.copon-input:focus {
+  outline: none;
+}
+.copon-btn {
+  display: inline;
+  background-color: #f12136;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-left: transparent;
+  width: 30%;
+}
+.copon-btn:hover {
+  color: #f12136;
+  background-color: #000;
+}
+.product-price {
+  display: inline;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.main-product-cart-add {
+  text-decoration: none;
+}
+.product-cart-add {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #f12136;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.product-cart-add:hover {
+  transform: scale(1.1);
+  background-color: #000;
+}

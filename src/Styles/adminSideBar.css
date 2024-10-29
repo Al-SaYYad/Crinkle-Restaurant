@@ -1,0 +1,122 @@
+.page-content {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 70vh;
+}
+.page-content > div:nth-child(2) {
+  padding-left: 255px;
+}
+
+.sidebar {
+  min-width: 240px;
+  min-height: 100vh;
+  background-color: black;
+  padding: 20px 0;
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.sidebar .toggle-btn {
+  width: fit-content;
+  margin-left: auto;
+  padding: 10px;
+  display: none;
+}
+.sidebar .toggle-btn svg {
+  width: 30px;
+  fill: white;
+  transition: 0.3s;
+}
+.sidebar.expand .toggle-btn svg {
+  transform: rotate(540deg);
+}
+.sidebar .navbar-brand {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sidebar a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: white;
+  position: relative;
+}
+.sidebar .admin-side-text {
+  display: flex;
+  gap: 17px;
+}
+.sidebar .admin-side-text svg {
+  width: 25px;
+  fill: #fff;
+}
+.sidebar a .admin-side-text {
+  margin-bottom: 16px;
+  padding: 8px 15px;
+  margin-left: 30px;
+  border-radius: 100vw 0 0 100vw;
+  background-color: #f12136;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+}
+.sidebar a .admin-side-text.active {
+  /* view-transition-name: activeNavTab; */
+  background-color: #fff;
+  color: #f12136;
+  position: relative;
+}
+.sidebar a .admin-side-text.active svg {
+  fill: #f12136;
+}
+.sidebar a .admin-side-text span {
+  line-height: 100%;
+}
+/* ::view-transition-group(activeNavTab) {
+  animation-duration: 1.5s;
+} */
+.sidebar a .admin-side-text.active::before,
+.sidebar a .admin-side-text.active::after {
+  --border-radius: 1rem;
+
+  content: "";
+  position: absolute;
+  right: 0;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  background-color: #000;
+  z-index: 1;
+}
+.sidebar a .admin-side-text.active::before {
+  top: calc(var(--border-radius) * -1);
+  box-shadow: 10px 10px 0 10px #fff;
+  border-radius: 0 0 100vw 0;
+}
+.sidebar a .admin-side-text.active::after {
+  bottom: calc(var(--border-radius) * -1);
+  box-shadow: 10px -10px 0 10px #fff;
+  border-radius: 0 100vw 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    min-width: 87px;
+    max-width: 87px;
+    max-height: 50px;
+  }
+  .sidebar.expand {
+    min-width: 240px;
+  }
+  .sidebar .toggle-btn {
+    display: block;
+  }
+  .page-content > div:nth-child(2) {
+    padding-left: 100px;
+  }
+}

@@ -1,0 +1,21 @@
+.cat-header {
+  background-color: #232f3e;
+}
+.main-cat {
+  display: flex;
+  justify-content: start;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+.main-cat .cat-text-header {
+  margin-right: 10px;
+  padding: 10px 30px;
+  border: 1px solid #232f3e;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.main-cat .cat-text-header:hover {
+  border: 1px solid #fff;
+}

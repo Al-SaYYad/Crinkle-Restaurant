@@ -1,0 +1,11 @@
+.my-row {
+  margin-top: 15px;
+}
+
+.cat-text {
+  display: inline;
+}
+.cat-rate {
+  margin: 0 10px;
+  color: gold;
+}

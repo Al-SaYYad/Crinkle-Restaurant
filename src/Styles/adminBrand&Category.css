@@ -1,0 +1,36 @@
+.text-form {
+  font-weight: bold;
+}
+svg {
+  cursor: pointer;
+}
+.input-form,
+.select,
+.input-form-area {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.input-form:focus,
+.select:focus {
+  outline: 1px solid #b6b6b6;
+}
+.btn-save {
+  padding: 10px 30px;
+  border: 1px solid #f12136;
+  background-color: #f12136;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  margin-bottom: 70px;
+}
+.btn-save:hover {
+  color: #f12136;
+  background-color: #fff;
+}
+.input-form-area:focus {
+  outline: 1px solid #b6b6b6;
+}

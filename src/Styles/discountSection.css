@@ -1,0 +1,16 @@
+.discount {
+    margin: 20px 0;
+    background-color: #ed0d51;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.discount .discount-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.discount img {
+    height: 200px;
+}

@@ -1,0 +1,9 @@
+.product-gallery-card {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 20px;
+}
+.product-gallery-card button {
+    margin-right: 50px;
+}

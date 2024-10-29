@@ -1,0 +1,43 @@
+.myCol {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.rate-name {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.star {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+/* @media (max-width: 767px) {
+    .star {
+      width: 13px;
+      height: 13px;
+    }
+  } */
+.input-form-area {
+    width: 100%;
+    padding: 20px;
+}
+.add-comment {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+.add-comment .btn-comment {
+    padding: 10px 30px;
+    border: 1px solid #f12136;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+    background-color: #f12136;
+}
+.add-comment .btn-comment:hover {
+    color: #f12136;
+    background-color: #fff;
+}

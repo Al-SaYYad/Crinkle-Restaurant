@@ -1,0 +1,22 @@
+.main-filter .filter-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.main-filter .contain-input:not(:last-of-type) {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  width: 100%;
+}
+.main-filter .contain-input input,
+.main-filter .contain-input .filter-sub {
+  cursor: pointer;
+  user-select: none;
+}
+.main-filter .contain-input input[type="number"] {
+  display: block;
+  width: 100%;
+  padding: 0 0 0 5px;
+  margin: 0;
+  max-lines: 2;
+}

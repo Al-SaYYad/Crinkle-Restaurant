@@ -1,0 +1,13 @@
+.cart-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f12136;
+}
+.myRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.myRow .col-md-3 {
+  padding: 0;
+}

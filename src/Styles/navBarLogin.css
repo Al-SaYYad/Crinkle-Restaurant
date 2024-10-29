@@ -1,0 +1,108 @@
+nav {
+  background-color: black;
+  transition: 0.4s;
+}
+nav .navbar-toggler {
+  color: none;
+  background-color: #fff;
+}
+.sidebar .navbar-brand img,
+nav .navbar-brand img {
+  width: 100px;
+}
+@media screen and (max-width: 767px) {
+  .sidebar .navbar-brand img {
+    width: 75px;
+  }
+}
+nav .collapse ul {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+nav .collapse ul li a {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+nav .collapse ul li svg {
+  transition: 0.3s;
+  fill: #fff;
+  margin-right: 6px;
+}
+@media (max-width: 767px) {
+  nav .collapse ul li a {
+    margin: 10px 0;
+  }
+}
+nav .collapse ul li a.active-link {
+  background-color: var(--main-color);
+}
+nav .collapse ul li a:hover,
+nav .collapse ul li a:hover svg {
+  background-color: #fff;
+  color: var(--secondry-color);
+  fill: var(--secondry-color);
+}
+nav .collapse ul li svg {
+  width: 20px;
+  height: 20px;
+}
+nav.nav-show .collapse.navbar-collapse {
+  display: block;
+}
+@media (max-width: 991px) {
+  .collapse.navbar-collapse {
+    display: none;
+  }
+  nav .collapse ul li a {
+    margin: 10px 0;
+  }
+}
+.mode-icon {
+  margin-left: 50px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f12136;
+  fill: #ffffff;
+}
+@media (max-width: 767px) {
+  .mode {
+    display: flex;
+    align-items: center;
+  }
+  .mode-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+}
+nav .nav-form input:focus {
+  box-shadow: none;
+  border: 1px solid var(--main-color);
+}
+nav .btn {
+  color: #fff;
+  border: 1px solid #f12136;
+  background-color: #f12136;
+  font-size: 18px;
+  font-weight: bold;
+}
+nav .btn:hover {
+  background-color: #fff;
+  color: #f12136;
+}
+nav .btn:focus {
+  background-color: #fff;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}

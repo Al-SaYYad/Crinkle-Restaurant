@@ -1,0 +1,41 @@
+.stat {
+  color: #5e5e5e;
+}
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+.user-info,
+.item-delete {
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+}
+.user-info {
+  color: blue;
+}
+.item-edit{
+  margin-left: auto;
+  padding: 7px;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  transition: .3s;
+}
+.item-edit:hover{
+  text-decoration: underline;
+  color: red;
+}
+.btn-add-address {
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #f12136;
+  border: 1px solid #f12136;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn-add-address:hover {
+  background-color: #fff;
+  color: #f12136;
+}
