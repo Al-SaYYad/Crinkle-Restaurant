@@ -143,7 +143,7 @@ const NavBarLogin = () => {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-danger " style={} type="submit">
+            <button className="btn btn-outline-danger " type="submit">
               Search
             </button>
             <div className="mode" onClick={() => toggle_mode()}>
