@@ -38,7 +38,7 @@ const ProductCard = () => {
       );
     } else {
       notify(
-        <Link to={""} className="heart-plus">
+        <Link className="heart-plus">
           Removed from {heartMinus}
         </Link>,
         "Error"

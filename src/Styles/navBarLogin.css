@@ -23,7 +23,6 @@ nav .collapse ul {
 nav .collapse ul li a {
   padding: 10px 25px;
   font-size: 20px;
-  font-weight: bold;
   margin-right: 10px;
   display: flex;
   align-items: center;
@@ -68,9 +67,9 @@ nav.nav-show .collapse.navbar-collapse {
 }
 .mode-icon {
   margin-left: 50px;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
+  padding: 8px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: #f12136;
   fill: #ffffff;
@@ -95,7 +94,6 @@ nav .btn {
   border: 1px solid #f12136;
   background-color: #f12136;
   font-size: 18px;
-  font-weight: bold;
 }
 nav .btn:hover {
   background-color: #fff;
