@@ -1,6 +1,6 @@
 import "./App.css";
 import HomePage from "./Page/Home/HomePage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import AllCategoryPage from "./Page/Category/AllCategoryPage";
 import MainForm from "./Page/Auth/MainForm";
 import AllBrand from "./Page/Brand/AllBrandPage";
@@ -24,6 +24,7 @@ import UserProfilePage from "./Page/User/UserProfilePage";
 import Dashboard from "./Page/Admin/Dashboard";
 import User from "./Page/User/User";
 import { Bounce, ToastContainer } from "react-toastify";
+import MenuPage from "./Page/Menu/MenuPage";
 
 function App() {
   return (
@@ -31,28 +32,21 @@ function App() {
       <BrowserRouter>
         <ToastContainer theme="dark" transition={Bounce} position="top-right" />
         <Routes>
-          <Route path="/Crinkle-Restaurant" element={<HomePage />} />
+          <Route path="/Crinkle-Restaurant/" element={<HomePage />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/login" element={<MainForm btnName="Log in" />} />
           <Route
-            path="/Crinkle-Restaurant/menu"
-            element={
-              <>
-                <h1>Menu Page</h1>
-              </>
-            }
-          />
-          <Route path="/Crinkle-Restaurant/cart" element={<CartPage />} />
-          <Route path="/Crinkle-Restaurant/login" element={<MainForm btnName="Log in" />} />
-          <Route
-            path="/Crinkle-Restaurant/signup"
+            path="/signup"
             element={<MainForm btnName="Sign up" type="signup" />}
           />
-          <Route path="/Crinkle-Restaurant/allcategory" element={<AllCategoryPage />} />
-          <Route path="/Crinkle-Restaurant/allbrand" element={<AllBrand />} />
-          <Route path="/Crinkle-Restaurant/products" element={<ShopProductsPage />} />
-          <Route path="/Crinkle-Restaurant/product/:id" element={<ProductDetailsPage />} />
-          <Route path="/Crinkle-Restaurant/order/paymethoud" element={<ChoosePayMethodPage />} />
+          <Route path="/allcategory" element={<AllCategoryPage />} />
+          <Route path="/allbrand" element={<AllBrand />} />
+          <Route path="/products" element={<ShopProductsPage />} />
+          <Route path="/product/:id" element={<ProductDetailsPage />} />
+          <Route path="/order/paymethoud" element={<ChoosePayMethodPage />} />
 
-          <Route path="/Crinkle-Restaurant/Dashboard" element={<Dashboard />}>
+          <Route path="/Dashboard" element={<Dashboard />}>
             <Route path="allproducts" element={<AdminAllProductsPage />} />
             <Route path="allorders" element={<AdminAllOrdersPage />} />
             <Route path="allorders/:id" element={<AdminOrderDetailsPage />} />
@@ -65,7 +59,7 @@ function App() {
             <Route path="addproduct" element={<AdminAddProductPage />} />
           </Route>
 
-          <Route path="/Crinkle-Restaurant/user" element={<User />}>
+          <Route path="/user" element={<User />}>
             <Route path="allorders" element={<UserAllOrdersPage />} />
             <Route path="profile" element={<UserProfilePage />} />
             <Route

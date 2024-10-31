@@ -1,48 +1,34 @@
-name: Deploy to Production
+name: CI Workflow
 
 on:
   push:
     branches:
-      - main  # أو الفرع الذي تريد نشره
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Check out code
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'  # استخدم النسخة التي تناسب مشروعك
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build the project
+      - name: Run tests
+        run: npm test
+
+      - name: Build project
         run: npm run build
 
-      - name: Upload Artifact
+      - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: react-app
-          path: build  # تأكد من أن المسار صحيح
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build  # يتطلب إنهاء خطوة البناء
-
-    steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: react-app
-
-      - name: Deploy to Server
-        run: |
-          echo "Deploying to server..."
-          # هنا يمكنك إضافة الأوامر لنشر التطبيق، مثل:
-          # scp -r ./build/* user@your-server:/path/to/deploy
-          # أو استخدام أي أداة نشر أخرى مثل Heroku أو AWS أو Firebase
+          name: my-artifact
+          path: path/to/artifact
