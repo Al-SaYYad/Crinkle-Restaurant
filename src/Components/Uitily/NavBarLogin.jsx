@@ -26,8 +26,14 @@ const NavBarLogin = () => {
   const [activeLink, setActiveLink] = useState("");
   // تعيين الحالة بناءً على التخزين عند التحميل
   useEffect(() => {
-    const storedActiveLink = sessionStorage.getItem("activeLink") || "/";
-    setActiveLink(storedActiveLink);
+    const storedActiveLink = sessionStorage.getItem("activeLink");
+    if (!storedActiveLink) {
+      const defaultLink = "/Crinkle-Restaurant/";
+      setActiveLink(defaultLink);
+      sessionStorage.setItem("activeLink", defaultLink);
+    } else {
+      setActiveLink(storedActiveLink);
+    }
   }, []);
 
   const toggle = () => {
