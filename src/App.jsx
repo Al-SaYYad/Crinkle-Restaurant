@@ -25,7 +25,6 @@ import Dashboard from "./Page/Admin/Dashboard";
 import User from "./Page/User/User";
 import { Bounce, ToastContainer } from "react-toastify";
 import MenuPage from "./Page/Menu/MenuPage";
-
 function App() {
   return (
     <div className={`App`}>
@@ -45,7 +44,6 @@ function App() {
           <Route path="/products" element={<ShopProductsPage />} />
           <Route path="/product/:id" element={<ProductDetailsPage />} />
           <Route path="/order/paymethoud" element={<ChoosePayMethodPage />} />
-
           <Route path="/Dashboard" element={<Dashboard />}>
             <Route path="allproducts" element={<AdminAllProductsPage />} />
             <Route path="allorders" element={<AdminAllOrdersPage />} />
@@ -58,7 +56,6 @@ function App() {
             />
             <Route path="addproduct" element={<AdminAddProductPage />} />
           </Route>
-
           <Route path="/user" element={<User />}>
             <Route path="allorders" element={<UserAllOrdersPage />} />
             <Route path="profile" element={<UserProfilePage />} />
@@ -80,19 +77,3 @@ function App() {
 }
 
 export default App;
-
-// document.querySelector("form").addEventListener("submit", function (event) {
-//   event.preventDefault();
-//   const img = document.createElement("img");
-//   img.src = "x";
-//   img.onerror = function () {
-//     alert("Cookie: " + document.cookie);
-//     setTimeout(function () {
-//       location.reload();
-//     }, 1000);
-//   };
-//   document.body.appendChild(img);
-//   setTimeout(() => {
-//     this.submit();
-//   }, 2000);
-// });

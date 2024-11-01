@@ -1,6 +1,12 @@
 .card {
   margin: 20px 0;
+  transition: 0.3s;
 }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
 .card-head {
   display: flex;
   align-items: center;
@@ -39,7 +45,7 @@ input[type="radio"] {
   width: 2rem;
   fill: #fff;
   margin-left: 6px;
-  transition: .1s;
+  transition: 0.1s;
 }
 .heart-plus svg:hover {
   transform: scale(1.1);

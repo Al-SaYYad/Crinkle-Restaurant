@@ -1,9 +1,11 @@
-import React from 'react'
+import ShopProductsPage from "../../Page/Products/ShopProductsPage";
 
-function Menu() {
+const Menu = () => {
   return (
-    <div>Menu Page</div>
-  )
-}
+    <div>
+      <ShopProductsPage />
+    </div>
+  );
+};
 
-export default Menu
+export default Menu;
