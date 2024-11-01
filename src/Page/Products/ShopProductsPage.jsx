@@ -7,6 +7,7 @@ import CardProductContainer from "../../Components/Products/CardProductContainer
 import PaginationComponents from "../../Components/Uitily/Pagination";
 import NavBarLogin from "../../Components/Uitily/NavBarLogin";
 import Footer from "../../Components/Uitily/Footer";
+
 const ShopProductsPage = () => {
   return (
     <>

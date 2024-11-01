@@ -1,21 +1,40 @@
 .cat-header {
   background-color: #232f3e;
+  padding: 15px 0;
 }
 .main-cat {
   display: flex;
-  justify-content: start;
-  padding: 10px 0;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 10px;
 }
 .main-cat .cat-text-header {
-  margin-right: 10px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: 1px solid #232f3e;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .main-cat .cat-text-header:hover {
   border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 576px) {
+  .main-cat .cat-text-header {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .main-cat .cat-text-header {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .main-cat .cat-text-header {
+    font-size: 20px;
+  }
 }
